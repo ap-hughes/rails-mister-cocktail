@@ -1,7 +1,10 @@
-<p>Navbar placeholder</p>
-<h1>Cocktails</h1>
-<p><% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
-  <% end %>
-</p>
-<%= link_to "Create a new cocktail", new_cocktail_path %>
+<div class="container">
+  <div class="big-banner"></div>
+  <div class="card">
+  <p><% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <% end %>
+  </p>
+  <%= link_to "Create a new cocktail", new_cocktail_path %>
+  </div>
+</div>
