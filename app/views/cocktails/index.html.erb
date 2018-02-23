@@ -11,7 +11,7 @@
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="card-narrow">
-            <div class="card-image" style="background-image: linear-gradient(-240deg, rgba(62,51,63,0.2) 0%, rgba(62,51,63,0.4) 20%), url(<%= image_path 'negroni-cover.jpg' %>);">
+            <div class="card-image" style="background-image: linear-gradient(-240deg, rgba(62,51,63,0.2) 0%, rgba(62,51,63,0.4) 20%), url(<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>);">
               <div class="card-description">
                 <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
               </div>
